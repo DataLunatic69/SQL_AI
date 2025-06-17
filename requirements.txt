@@ -1,0 +1,52 @@
+streamlit==1.26.0
+langchain==0.0.200
+langchain-core<0.2.0,>=0.1.40
+langchainplus-sdk==0.0.20
+langchain-groq==0.1.0
+psycopg2-binary==2.9.7
+pydantic<2,>=1
+sqlalchemy==1.4.48
+python-dotenv==1.0.0
+plotly
+pandas
+
+Q1: Find the vehicle parts with the most number of damages on average.
+SQL: 
+SELECT parts, COUNT(damages) AS damage_count
+FROM vehicle_table
+GROUP BY parts
+ORDER BY damage_count DESC;
+
+Q2: Find the total number of damages for each vehicle make.
+SQL: 
+SELECT make, COUNT(damages) AS total_damages
+FROM vehicle_table
+GROUP BY make
+ORDER BY total_damages DESC;
+
+Q3: List all vehicles and their parts which have been damaged.
+SQL: 
+SELECT reg_no, parts, damages
+FROM vehicle_table
+WHERE damages IS NOT NULL
+ORDER BY reg_no;
+
+Q4: Find the number of different types of damages reported for each vehicle model.
+SQL: 
+SELECT model, COUNT(DISTINCT damages) AS different_damage_types
+FROM vehicle_table
+GROUP BY model
+ORDER BY different_damage_types DESC;
+
+Q5: Count the number of vehicles in each fleet.
+SQL: 
+SELECT fleet, COUNT(DISTINCT reg_no) AS vehicle_count
+FROM vehicle_table
+GROUP BY fleet
+ORDER BY vehicle_count DESC;
+
+Q6: Find vehicles that belong to a specific make and model.
+SQL: 
+SELECT reg_no, make, model
+FROM vehicle_table
+WHERE make = 'Toyota' AND model = 'Corolla';
