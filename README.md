@@ -75,7 +75,7 @@ langchain-postgres-ai/
    streamlit run app.py
    ```
 
-## 🎯 Usage
+## 🎯 Sample Queries
 
 1. **Start the application** and navigate to the provided local URL
 2. **Enter your Groq API key** in the sidebar
@@ -86,7 +86,7 @@ langchain-postgres-ai/
    - "Get the order history for customer ID 1"
    - "Show me all details for order number 3"
 
-## 📊 Sample Queries
+## 📊 Query
 
 The application supports various types of database queries:
 
@@ -97,7 +97,7 @@ The application supports various types of database queries:
 
 ## 🖼️ Application Screenshots
 
-### Main Interface
+### Result Image
 ![Application Main Interface](result_1)
 
 ### Query Execution
@@ -106,7 +106,7 @@ The application supports various types of database queries:
 ### Results Display
 ![Results Display](result_3)
 
-### Error Handling
+### Main Interface
 ![Error Handling](result_4)
 
 ## 🔧 Technical Architecture
