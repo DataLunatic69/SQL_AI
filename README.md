@@ -98,16 +98,16 @@ The application supports various types of database queries:
 ## 🖼️ Application Screenshots
 
 ### Main Interface
-![Application Main Interface](result_1.png)
+![Application Main Interface](result_1)
 
 ### Query Execution
-![Query Execution Example](result_2.png)
+![Query Execution Example](result_2)
 
 ### Results Display
-![Results Display](result_3.png)
+![Results Display](result_3)
 
 ### Error Handling
-![Error Handling](result_4.png)
+![Error Handling](result_4)
 
 ## 🔧 Technical Architecture
 
